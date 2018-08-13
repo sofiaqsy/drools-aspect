@@ -1,0 +1,2 @@
+INSERT INTO usuario(nombre, apellido_paterno, apellido_materno) VALUES('Daniel', 'Revoredo', 'Casas');
+INSERT INTO usuario(nombre, apellido_paterno, apellido_materno) VALUES('Josue', 'Gonzales', 'Rosas');

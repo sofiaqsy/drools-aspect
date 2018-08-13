@@ -1,0 +1,21 @@
+package rules
+
+import com.example.drools.entity.Producto;
+import java.math.BigDecimal;
+
+
+rule "Decuento para dulces"
+	when 
+		producto : Producto(tipo == "golosina")
+	then
+	   producto.setDescuento( new BigDecimal("1.5"));
+	   System.out.println("Se aplicó descuento para golosinas");
+	end
+
+rule "Decuento para Frutas"
+	when 
+		producto : Producto(tipo == "fruta")
+	then
+		producto.setDescuento( new BigDecimal("2.4"));
+	   System.out.println("Se aplicó descuento para frutas");
+	end
